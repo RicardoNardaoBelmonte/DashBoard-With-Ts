@@ -1,3 +1,25 @@
+import type React from "react"
+
+const genelarStyle = {
+    fontSize: "1rem",
+    color: "var(--color-2)",
+    padding: "var(--gap-s) .75rem",
+    backgroundColor: "var(--color-4)",
+    borderRadius: "var(--gap)",
+}
+
+const labelStyle: React.CSSProperties= {
+    display: "block",
+    marginBottom: "var(--gap-s)",
+    fontWeight: "600",
+    ...genelarStyle
+}
+
+const inputStyle: React.CSSProperties = {
+    border: "none",
+    fontFamily: "monospace", 
+    ...genelarStyle
+}
 
 type IDateInput = React.ComponentProps<'input'> & {
     label: string
@@ -7,8 +29,8 @@ export default function DateInput({label, ...props}: IDateInput){
 
     return(
         <div>
-            <label htmlFor={label}>{label}</label>
-            <input type="date" id={label} name={label} {...props}/>
+            <label style={labelStyle} htmlFor={label}>{label}</label>
+            <input style={inputStyle} type="date" id={label} name={label} {...props}/>
         </div>
     )
 }
