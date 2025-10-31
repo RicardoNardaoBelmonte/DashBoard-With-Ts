@@ -2,6 +2,7 @@ import { useData } from "../Context/dataContext";
 
 function nomeMes(n: number){
     const date = new Date();
+    date.setDate(1); 
     date.setMonth(date.getMonth() + n);
     const nome = new Intl.DateTimeFormat('pt-BR', {month: "long"}).format(date);
     return nome;
@@ -31,6 +32,7 @@ export default function MesBtn({n}: {n: number}) {
 
     function setMes(n: number){
         const date = new Date();
+        date.setDate(1); 
         date.setMonth(date.getMonth() + n);
 
         const firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
