@@ -1,4 +1,5 @@
 import { useData } from "../Context/dataContext"
+import GraficoVendas from "../Components/GraficoVendas";
 
 export default function Resumo(){
    const {data} = useData();
@@ -23,7 +24,9 @@ export default function Resumo(){
                     .toLocaleString('pt-BR', {style: 'currency', currency: "BRL"})}</span>
                 </div>
             </div>
-            <div className="box mb">Gráficos</div>
+            <div className="box mb">
+                <GraficoVendas data={data}/>
+            </div>
         </section>
     )
 }
