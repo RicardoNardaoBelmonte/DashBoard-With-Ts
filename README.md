@@ -23,29 +23,29 @@ This is a sales dashboard project built with React and TypeScript, developed to 
 
 - Visualizing sales through graphs
 
--Access details of individual sales
+- Access details of individual sales
 
 ## How to run the project
 
-1. Setp one: Clone the repositor
+1. Step one: Clone the repository
 
 ```bash
     git clone "link"
 ```
 
-2. Setp two: Go to dashboard folder
+2. Step two: Go to dashboard folder
 
 ```bash
     cd dashboard
 ```
 
-3. Step three: Instal the dependencies 
+3. Step three: Install the dependencies 
 
 ``` bash
     npm install
 ```
 
-4. Setp four: Start the devlopment server:
+4. Step four: Start the development server:
 
 ```bash
     npm run dev
